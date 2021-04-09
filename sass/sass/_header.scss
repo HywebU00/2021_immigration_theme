@@ -9,6 +9,7 @@
     @include screen('mobile') {
         position: fixed;
         width: 100%;
+        @include gradient(#53af7e, #1894c2, diagonal);   
     }
     // 虛擬底色 - navigation bg
     // &:before {
@@ -112,7 +113,7 @@
             img {
                 width: auto;
                 height: auto;
-                max-height: 80px;
+                max-height: 70px;
                 margin: 0px auto;
                 transform: scale(1);
             }
