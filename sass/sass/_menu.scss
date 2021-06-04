@@ -51,6 +51,8 @@
                 }
                 &.active {
                     >a {
+                        color: #fff;
+                    background-color:darken($primaryColor, 10);
                         &:after {
                             border: 2px solid rgba(255, 255, 255, .8);
                             border-bottom: none;
@@ -58,6 +60,9 @@
                             transform: rotate(-45deg);
                             top: 1.4em;
                         }
+                    }
+                    ul{
+                        display: block !important;
                     }
                 }
             }
@@ -107,6 +112,12 @@
                         &:hover, &:focus {
                             color: #fff;
                             background-color:darken($secondaryColor, 5);
+                        }
+                    }
+                    &.active{
+                        a{
+                           color: #fff;
+                            background-color:darken($secondaryColor, 5); 
                         }
                     }
                 }
