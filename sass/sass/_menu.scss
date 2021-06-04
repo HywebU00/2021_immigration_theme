@@ -52,7 +52,7 @@
                 &.active {
                     >a {
                         color: #fff;
-                    background-color:darken($primaryColor, 10);
+                        background-color: darken($primaryColor, 10);
                         &:after {
                             border: 2px solid rgba(255, 255, 255, .8);
                             border-bottom: none;
@@ -61,7 +61,7 @@
                             top: 1.4em;
                         }
                     }
-                    ul{
+                    ul {
                         display: block !important;
                     }
                 }
@@ -69,10 +69,9 @@
             &:hover, &:focus {
                 >a {
                     color: #fff;
-                    background-color:darken($primaryColor, 10);
+                    background-color: darken($primaryColor, 10);
                 }
             }
-
         }
     }
     ul {
@@ -82,8 +81,8 @@
                 display: block;
                 outline: none;
                 text-decoration: none;
-                &:focus{
-                    box-shadow:none;
+                &:focus {
+                    box-shadow: none;
                 }
             }
             ul {
@@ -111,13 +110,13 @@
                         background: url('../images/arrow.png')no-repeat 30px 1.1em;
                         &:hover, &:focus {
                             color: #fff;
-                            background-color:darken($secondaryColor, 5);
+                            background-color: darken($secondaryColor, 5);
                         }
                     }
-                    &.active{
-                        a{
-                           color: #fff;
-                            background-color:darken($secondaryColor, 5); 
+                    &.active {
+                        a {
+                            color: #fff;
+                            background-color: darken($secondaryColor, 5);
                         }
                     }
                 }
@@ -284,6 +283,12 @@
                             &.hasChild {
                                 >a {
                                     background: #eee;
+                                }
+                            }
+                            &.active {
+                                a {
+                                    color: #000;
+                                    background: #ccc;
                                 }
                             }
                             ul {
