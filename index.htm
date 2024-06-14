@@ -20,6 +20,7 @@
             clear: both;
             background: #FFF
         }
+
         .demo_wrap h1 {
             display: block;
             margin: 0px auto;
@@ -30,33 +31,40 @@
             padding: 8px 20px;
             box-sizing: border-box;
         }
-        
+
         .demo_wrap h1 img {
-           width: 100%;
+            width: 100%;
         }
+
         @media screen and (max-width:545px) {
             .demo_wrap h1 {
                 width: 100%;
                 float: none;
                 text-align: center
             }
-           
+
         }
+
         .num {
             width: 12%
         }
+
         body {
             counter-reset: num
         }
-        body:before{
+
+        body:before {
             display: none;
         }
-        body:after{
+
+        body:after {
             display: none;
         }
+
         table {
             margin-bottom: 1em
         }
+
         table caption {
             text-align: left;
             font-weight: bold;
@@ -64,25 +72,30 @@
             padding: .5em 0;
             color: #ff5050
         }
+
         tbody tr td:first-child:before {
             counter-increment: num;
             display: block;
             text-align: center;
             content: counters(num, ".") " "
         }
+
         tbody tr td:nth-child(2) {
             width: 35%
         }
-        .btn_grp{
+
+        .btn_grp {
             text-align: right;
         }
+
         @media screen and (max-width:545px) {
-         .btn_grp{
-            text-align: center;
-        } 
-    }
+            .btn_grp {
+                text-align: center;
+            }
+        }
     </style>
 </head>
+
 <body>
     <div class="demo_wrap">
         <h1><img src="images/logo.png" alt=""></h1>
@@ -107,27 +120,44 @@
                         <!-- 連結放到a裡面就好 -->
                         <td><a href="mp.html"></a></td>
                     </tr>
-                    
-                   
-                     <tr>
+                    <tr>
                         <td></td>
                         <td>網站導覽</td>
                         <td><a href="sitemap.html"></a></td>
                     </tr>
-                    
+                    <tr>
+                        <td></td>
+                        <td>隱私權保護服務及宣告</td>
+                        <td><a href="cp_privacy.html"></a></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>安全防護與回復機制</td>
+                        <td><a href="cp_security.html"></a></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>資訊安全宣告</td>
+                        <td><a href="cp_information_security.html"></a></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>政府網站資料開放宣告</td>
+                        <td><a href="cp_websiteopen.html"></a></td>
+                    </tr>
                 </tbody>
             </table>
-            
+
         </div>
     </div>
-    <a href="javascript:;" class="scrollToTop" >回頁首</a>
+    <a href="javascript:;" class="scrollToTop">回頁首</a>
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="vendor/jquery.easing.min.js"></script>
     <script src="js/hyui.js"></script>
     <script src="js/customize.js"></script>
     <script>
-        $(function() {
-            $('tbody').find('a').each(function(index, el) {
+        $(function () {
+            $('tbody').find('a').each(function (index, el) {
                 var Link = $(this).attr('href');
                 $(this).text(Link);
             });

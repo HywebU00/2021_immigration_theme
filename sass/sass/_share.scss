@@ -1,15 +1,15 @@
 // 基本樣式
 .share {
   box-sizing: border-box;
-  margin: .5em 0;
+  margin: 0.5em 0;
   ul {
     @include li-reset;
     display: flex;
     li {
       margin: 0px 3px 3px;
-      flex:0 0 32px;
-      a{
-        display:block;
+      flex: 0 0 32px;
+      a {
+        display: block;
         height: 32px;
       }
       @include screen('tablet') {
@@ -31,40 +31,40 @@
     text-align: center;
     height: 28px;
     margin: 0 4px;
-    position:relative;
+    position: relative;
     @include screen('mobile') {
       display: none;
     }
-    a.shareButton{
+    a.shareButton {
       display: block;
       background: #fff;
       border-radius: 50%;
       width: 28px;
       height: 28px;
-      text-indent:-9999px;
+      text-indent: -9999px;
       text-align: center;
       position: relative;
       &:before {
-        content: "";
+        content: '';
         position: absolute;
         width: 60%;
         height: 60%;
         top: 20%;
         left: 20%;
-        background: url(../images/basic/icon_share3.png) no-repeat center center  !important;
+        background: url(../images/basic/icon_share3.png) no-repeat center center !important;
         background-size: 20px !important;
       }
 
-      &:hover, &:focus {
+      &:hover,
+      &:focus {
         background: darken($secondaryColor, 10);
 
         &:before {
           // filter: invert(100%);
-          background: url(../images/basic/icon_share2.png) no-repeat center center  !important;
+          background: url(../images/basic/icon_share2.png) no-repeat center center !important;
           background-size: 20px !important;
         }
       }
-
     }
     ul {
       display: none;
@@ -73,15 +73,15 @@
       left: -6px;
       // width: 44px;
       padding: 6px;
-      background: #FFF;
-      box-shadow: 2px 2px 5px RGBA(0, 0, 0, .2);
+      background: #fff;
+      box-shadow: 2px 2px 5px RGBA(0, 0, 0, 0.2);
       border-radius: 8px;
       z-index: 999;
       height: auto;
       li {
         display: block;
-        margin: 0 auto.5em;
-        &:last-child{
+        margin: 0 auto 0.5em;
+        &:last-child {
           margin-bottom: 0;
         }
         img {
@@ -95,7 +95,8 @@
           padding: 0;
           width: 32px;
           height: 32px;
-          &:hover, &:focus {
+          &:hover,
+          &:focus {
             background: transparent;
             img {
               filter: grayscale(1);
@@ -108,5 +109,4 @@
       }
     }
   }
-
 }
