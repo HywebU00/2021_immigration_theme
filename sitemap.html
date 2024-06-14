@@ -156,13 +156,6 @@
                 <!-- 主要內容區 -->
                 <div class="center_block">
                     <h2 class="title">網站導覽</h2>
-                    <div class="function">
-                        <ul>
-                            <li class="icon_back"><a href="#">回上一頁</a></li>
-                            <li class="icon_print"><a href="#">友善列印</a></li>
-                            <!-- <li class="icon_forward"><a href="#">轉寄友人</a></li> -->
-                        </ul>
-                    </div>
                     <!-- SITEMAP Start -->
                     <section class="sitemap">
                         <p>如果您使用的瀏覽器是IE，快速鍵的使用方式是<kbd>Alt</kbd> 加上所定義的字母；如果您用Firefox 瀏覽網頁，快速鍵的使用方式是 <kbd>Alt</kbd> 加 <kbd>Shift </kbd>加上所定義的字母 ：，本網站的快速鍵﹝Accesskey﹞設定如下：</p>
@@ -180,66 +173,27 @@
                         </p>
                         <div class="cascading">
                             <ul>
-                                <li><a href="#">認識我們</a>
+                                <li><a href="#">機場港口入出境</a>
                                     <ul>
-                                        <li><a href="#">認識秘書處</a></li>
-                                        <li><a href="#">首長介紹</a></li>
-                                        <li><a href="#">組織架構</a></li>
-                                        <li><a href="#">業務職掌</a></li>
-                                        <li><a href="#">服務電話</a></li>
-                                        <li><a href="#">成果展示</a></li>
-                                        <li><a href="#">特色綠建築</a></li>
-                                        <li><a href="#">合署辦公大樓介紹</a></li>
-                                        <li><a href="#">意見信箱</a></li>
+                                        <li onclick="setMenuSession(this)"><a href="/biweb/entryExitPort">機場港口分析</a></li>
+                                        <li onclick="setMenuSession(this)"><a href="/biweb/entryExitPosition">身分別分析</a></li>
+                                        <li onclick="setMenuSession(this)"><a href="/biweb/entryExitAge">年齡分析</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="#">最新訊息</a>
+                                <li><a href="#">陸港澳人民來臺</a>
                                     <ul>
-                                        <li><a href="#">市政新聞</a></li>
-                                        <li><a href="#">國際交流消息</a></li>
-                                        <li><a href="#">消費者保護訊息</a></li>
-                                        <li><a href="#">徵才訊息</a></li>
-                                        <li><a href="#">工友事求人</a></li>
+                                        <li onclick="setMenuSession(this)"><a href="/biweb/cnEntryExit">大陸地區人民來臺分析</a></li>
+                                        <li onclick="setMenuSession(this)"><a href="/biweb/cnEntryExitDetail">大陸地區人民來臺事由分析</a></li>
+                                        <li onclick="setMenuSession(this)"><a href="/biweb/cnStatisticsP">大陸地區人民專業交流分析</a></li>
+                                        <li onclick="setMenuSession(this)"><a href="/biweb/cnStatisticsB">大陸地區人民商務活動交流分析</a></li>
+                                        <li onclick="setMenuSession(this)"><a href="/biweb/cnResidence">陸港澳人民來臺居留定居分析</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="#">申辦服務</a>
+                                <li><a href="#">外僑居留</a>
                                     <ul>
-                                        <li><a href="#">會議室及活動場地申請查詢</a></li>
-                                        <li><a href="#">檔案應用服務申請</a></li>
-                                        <li><a href="#">喜慶中堂申請</a></li>
-                                        <li><a href="#">市府公報電子報訂閱</a></li>
-                                        <li><a href="#">申辦表單下載</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="#">主題專區</a>
-                                    <ul>
-                                        <li><a href="#">國際交流</a></li>
-                                        <li><a href="#">消費者保護資訊</a></li>
-                                        <li><a href="#">績優員工故事專題</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="#">資訊公開</a>
-                                    <ul>
-                                        <li><a href="#">重大政策</a></li>
-                                        <li><a href="#">市府公報</a></li>
-                                        <li><a href="#">法規專區</a></li>
-                                        <li><a href="#">遊說法資訊專區</a></li>
-                                        <li><a href="#">統計資料專區</a></li>
-                                        <li><a href="#">性別齊步走</a></li>
-                                        <li><a href="#">政風園地</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="#">認識我們</a>
-                                    <ul>
-                                        <li><a href="#">認識秘書處</a></li>
-                                        <li><a href="#">首長介紹</a></li>
-                                        <li><a href="#">組織架構</a></li>
-                                        <li><a href="#">業務職掌</a></li>
-                                        <li><a href="#">服務電話</a></li>
-                                        <li><a href="#">成果展示</a></li>
-                                        <li><a href="#">特色綠建築</a></li>
-                                        <li><a href="#">合署辦公大樓介紹</a></li>
-                                        <li><a href="#">意見信箱</a></li>
+                                        <li onclick="setMenuSession(this)"><a href="/biweb/residence_occuAndCityCount">職業及縣市分析</a></li>
+                                        <li onclick="setMenuSession(this)"><a href="/biweb/residence_occuAndNationCount">職業及國籍分析</a></li>
+                                        <li onclick="setMenuSession(this)"><a href="/biweb/residence_cityAndNationCount">縣市及國籍分析</a></li>
                                     </ul>
                                 </li>
                             </ul>
