@@ -5,13 +5,11 @@ footer {
   font-size: 0.813em;
   padding: 1em 0;
   .container {
-    @include gutter;
-    > div {
-      padding-bottom: 1em;
-    }
+    padding: 0 40px 0 220px;
     display: flex;
-    @include screen('tablet') {
-      flex-wrap: wrap;
+    flex-wrap: wrap;
+    @include screen('mobile') {
+      padding: 0 20px;
     }
   }
   a {
@@ -22,22 +20,14 @@ footer {
       color: darken($primaryColor, 10);
     }
   }
-  .footer_logo {
-    flex: 0 1 240px;
-  }
+
   .footer_info {
     flex: 1 1 auto;
-    margin-left: 230px;
-    @include screen('mobile') {
-      margin-left: 10px;
-    }
   }
   .footer_icon {
-    flex: 0 1 170px;
-    @include screen('tablet') {
+    flex: 0 0 170px;
+    @media (max-width: 1000px) {
       flex: 1 1 100%;
-      text-align: left;
-      margin-left: 10px;
     }
   }
   // 版權連結
@@ -45,13 +35,20 @@ footer {
     @include li-reset();
     clear: both;
     display: flex;
+    flex-wrap: wrap;
     @include screen('mobile') {
+      // flex-direction: column;
+    }
+    @include screen('xs_mobile') {
       flex-direction: column;
     }
     li {
       flex: 0 1 auto;
       margin: 0px 5px 5px 0px;
-      @include screen('mobile') {
+      @media (max-width: 850px) {
+        flex: 1 1 48%;
+      }
+      @include screen('xs_mobile') {
         flex: 1 1 100%;
       }
       a {
@@ -89,8 +86,7 @@ footer {
       display: block;
       vertical-align: top;
       position: relative;
-      margin-left: 7em;
-      margin-top: 2em;
+
       &:focus {
         &:after {
           content: '';

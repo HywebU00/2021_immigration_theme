@@ -8094,19 +8094,13 @@ footer {
   padding: 1em 0;
 }
 footer .container {
-  position: relative;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-  box-sizing: border-box;
+  padding: 0 40px 0 220px;
   display: flex;
+  flex-wrap: wrap;
 }
-footer .container > div {
-  padding-bottom: 1em;
-}
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 767px) {
   footer .container {
-    flex-wrap: wrap;
+    padding: 0 20px;
   }
 }
 footer a {
@@ -8116,26 +8110,15 @@ footer a {
 footer a:hover, footer a:focus {
   color: #428d65;
 }
-footer .footer_logo {
-  flex: 0 1 240px;
-}
 footer .footer_info {
   flex: 1 1 auto;
-  margin-left: 230px;
-}
-@media screen and (max-width: 767px) {
-  footer .footer_info {
-    margin-left: 10px;
-  }
 }
 footer .footer_icon {
-  flex: 0 1 170px;
+  flex: 0 0 170px;
 }
-@media screen and (max-width: 991px) {
+@media (max-width: 1000px) {
   footer .footer_icon {
     flex: 1 1 100%;
-    text-align: left;
-    margin-left: 10px;
   }
 }
 footer .footer_link {
@@ -8144,8 +8127,9 @@ footer .footer_link {
   list-style: none;
   clear: both;
   display: flex;
+  flex-wrap: wrap;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 575px) {
   footer .footer_link {
     flex-direction: column;
   }
@@ -8154,7 +8138,12 @@ footer .footer_link li {
   flex: 0 1 auto;
   margin: 0px 5px 5px 0px;
 }
-@media screen and (max-width: 767px) {
+@media (max-width: 850px) {
+  footer .footer_link li {
+    flex: 1 1 48%;
+  }
+}
+@media screen and (max-width: 575px) {
   footer .footer_link li {
     flex: 1 1 100%;
   }
@@ -8193,8 +8182,6 @@ footer .footer_icon a {
   display: block;
   vertical-align: top;
   position: relative;
-  margin-left: 7em;
-  margin-top: 2em;
 }
 footer .footer_icon a:focus:after {
   content: "";
